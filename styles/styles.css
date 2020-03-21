@@ -1,0 +1,714 @@
+/* Fonts */
+@font-face {
+	font-family: 'droid_serifbold';
+	src: url('../fonts/DroidSerif-Bold-webfont.eot');
+	src: url('../fonts/DroidSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/DroidSerif-Bold-webfont.woff2') format('woff2'), url('../fonts/DroidSerif-Bold-webfont.woff') format('woff'), url('../fonts/DroidSerif-Bold-webfont.ttf') format('truetype'), url('../fonts/DroidSerif-Bold-webfont.svg#droid_serifbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'droid_serifregular';
+	src: url('../fonts/DroidSerif-webfont.eot');
+	src: url('../fonts/DroidSerif-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/DroidSerif-webfont.woff2') format('woff2'), url('../fonts/DroidSerif-webfont.woff') format('woff'), url('../fonts/DroidSerif-webfont.ttf') format('truetype'), url('../fonts/DroidSerif-webfont.svg#droid_serifregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*, *:after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body, .container, .scroller {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color:#222222; overflow-x: hidden;
+}
+body, html, .scroller {
+-ms-overflow-style: none !important;
+}
+@-ms-viewport {
+width: auto;
+}
+.scroller {
+	overflow-y: scroll; -webkit-overflow-scrolling:touch;
+}
+.scroller > * {
+-webkit-transform: translateZ(0px);
+}
+.scroller,
+.scroller-inner {
+	position: relative;
+}
+a, a:visited, a:active {
+	color:#c21818;
+	text-decoration:none;
+}
+a:hover {
+	opacity:.9;
+}
+a img {
+	border: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+h1, h2, h3 {
+	font-family: 'droid_serifregular';
+	padding: 10px;
+	font-weight: normal;
+	margin: 0;
+}
+h1 {
+	padding: 10px 0 10px 0;
+}
+h2 {
+	font-size: 3em;
+}
+h4 { padding:20px; background-color:#999; margin:15px 5px; text-align:left; }
+h4 a { color:#fff; }
+/* MOBILE & SMALL SCREENS */
+@media all and (max-width: 479px) {
+h2 {
+	font-size: 2em;
+}
+}
+h3 {
+	color: #c21818;
+	font-size: 1.5em;
+}
+strong {
+	font-family: 'droid_serifbold';
+}
+.red {
+	color: #c21818;
+}
+.gray {
+	color:#666;
+}
+.pLarge { font-size:1.5em; }
+.veins {
+	background:url(../images/veins.png) no-repeat center center; background-size:cover; width:100%; min-height:651px;
+}
+/* home screen */
+.homeContent1Wrapper { position:relative; }
+#can {
+	position: absolute; width:100%;
+}
+.homeContent {
+	position: absolute;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	text-align: right;
+	z-index: 10;
+	width: 80%;
+	margin: auto;
+	top: 50%;
+	right:50px;
+}
+.homeButton {
+	margin-bottom: 40px!important;
+}
+.homeBG {
+	width: 0;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, .1) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+	border-width: 800px 0 0 0;
+	background-color: transparent;
+	position: relative;
+	-webkit-transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+.homeContent h1 {
+	padding-bottom: 40px;
+	color: #e0e0e0;
+	font-size: 2.75em;
+	line-height: 125%;
+}
+/* TABLET */
+@media all and (max-width: 768px) {
+.homeContent {
+	text-align: center;
+	width: 90%;
+	right:5%;
+}
+.homeContent h1 {
+	padding-bottom: 30px;
+	color: #e0e0e0;
+	font-size: 2.5em;
+}
+}
+/* MOBILE */
+@media all and (max-width: 480px) {
+.homeContent h1 {
+	font-size: 1.5em;
+}
+}
+.homeContent a, .homeFeatured a, .secondaryFeatured a, .vlButton a, #VenousProVideo a, .pressButton a {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 2px #c21818 solid;
+	color: #fff;
+	background: rgba(194,24,24,.5); 
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 10px;
+	font-weight: 700;
+	letter-spacing: 0.085em;
+}
+.pressButton a {
+	margin:10px 10px 10px 20px;
+}
+.homeContent a:hover, .homeFeatured a:hover, .secondaryFeatured a:hover, .vlButton a:hover, #VenousProVideo a:hover, .pressButton a:hover {
+	opacity: .8;
+}
+.homeContent2 {
+	background-color:#fff;
+	padding: 40px 0 0 0; position:relative;
+}
+.homeContent2 p {
+	padding: 0 20px 0 20px; margin:0;
+}
+.homeFeatured {
+	height: 450px;
+	width: 100%!important;
+	padding-top: 100px;
+	background: url(../images/blurry2.jpg) no-repeat center top;
+	background-size: cover;
+}
+.homeFeatured p, .secondaryFeatured p {
+	font-family: 'droid_serifregular';
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+	font-size: 2.5em;
+	font-weight: 700;
+	padding: 10px 10px 30px 10px;
+}
+.secondaryFeatured {
+	height: 450px;
+	width: 100%!important;
+	padding-top: 100px;
+	background: no-repeat center top;
+	background-size: cover;
+}
+/* TABLET */
+@media all and (max-width: 800px) {
+.homeFeatured p, .secondaryFeatured p {
+	font-size: 2em;
+	width: 95%;
+}
+}
+/* MOBILE */
+@media all and (max-width: 480px) {
+.homeFeatured p, .secondaryFeatured p {
+	font-size: 1.5em;
+	width: 95%;
+}
+}
+/* triangle bg */
+.triangle {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+.triangle svg {
+	display: block;
+}
+svg#bigTriangleColor {
+	pointer-events: none;
+}
+#bigTriangleColor path {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 2;
+}
+/* footer */
+.social {
+	background-color: #222;
+	width: 100%;
+	padding: 40px; margin-top:30px; 
+}
+.social a:hover {
+	opacity:.8;
+}
+.footer {
+	background-color: #333;
+	width: 100%;
+	padding: 20px;
+	color:#fff;
+}
+/* from http://ianlunn.github.io/Hover/ */
+.hvr-shrink {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: transform;
+transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+-webkit-transform: scale(0.8);
+transform: scale(0.8);
+}
+
+/* NAVIGATION */
+.mp-logo {
+	color: #fff;
+	font-family: 'droid_serifregular';
+	text-align: center;
+	font-size: 2.4em;
+	padding: 10px 10px 20px 10px;
+}
+.container {
+	overflow-x: hidden;
+}
+.menu-trigger {
+	text-align: center;
+	top: 20px;
+	left: 20px;
+	z-index: 999;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	position: fixed;
+	color: #fff;
+	padding:10px;
+	background-image:url(../images/menu-background.png);
+}
+#wn_hamburger {
+	width: 25px;
+	height: 25px;
+	position: relative;
+	margin: auto; margin-top:10px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+#wn_hamburger span {
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background: #fff;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+#wn_hamburger span:nth-child(1) {
+	top: 0px;
+}
+#wn_hamburger span:nth-child(2) {
+	top: 8px;
+}
+#wn_hamburger span:nth-child(3) {
+	top: 16px;
+}
+#wn_hamburger.open span:nth-child(1) {
+	top: 8px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+#wn_hamburger.open span:nth-child(2) {
+	opacity: 0;
+}
+#wn_hamburger.open span:nth-child(3) {
+	top: 8px;
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+}
+.mp-pusher {
+	position: relative;
+	left: 0;
+	height: 100%;
+}
+.mp-menu {
+	position: absolute; /* we can't use fixed here :( */
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 250px;
+	height: 100%;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+.mp-level {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #2d2d2d;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+.mp-pusher::after, .mp-level::after, .mp-level::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	content: '';
+	opacity: 0;
+}
+.mp-pusher::after, .mp-level::after {
+	background: rgba(0,0,0,0.5);
+	-webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	-moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+}
+.mp-level::after {
+	z-index: -1;
+}
+.mp-pusher.mp-pushed::after, .mp-level.mp-level-overlay::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+.mp-level.mp-level-overlay {
+	cursor: pointer;
+}
+.mp-level.mp-level-overlay.mp-level::before {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	opacity: 1;
+}
+.mp-pusher, .mp-level {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.mp-overlap .mp-level.mp-level-open {
+	box-shadow: 1px 0 2px rgba(0,0,0,0.2);
+	-webkit-transform: translate3d(-40px, 0, 0);
+	-moz-transform: translate3d(-40px, 0, 0);
+	transform: translate3d(-40px, 0, 0);
+}
+.mp-menu > .mp-level, .mp-menu > .mp-level.mp-level-open, .mp-menu.mp-overlap > .mp-level, .mp-menu.mp-overlap > .mp-level.mp-level-open {
+	box-shadow: none;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.mp-cover .mp-level.mp-level-open {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.mp-cover .mp-level.mp-level-open > ul > li > .mp-level:not(.mp-level-open) {
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+.mp-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.mp-menu h2 {
+	color: #fff;
+	margin: 0;
+	padding: 1em;
+	font-weight: 400;
+	font-size: 2em;
+}
+.mp-menu.mp-overlap h2::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 8px;
+	font-size: 75%;
+	line-height: 1.8;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.1s 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.1s 0.3s;
+	transition: opacity 0.3s, transform 0.1s 0.3s;
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+.mp-menu.mp-cover h2 {
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-size: 1.75em;
+	text-align: center;
+}
+.mp-menu.mp-cover p {
+	letter-spacing: 1px;
+	font-size: 1em;
+	text-align: center;
+	padding: 10px;
+	color: #ccc;
+	margin-top: -10px;
+}
+.mp-overlap .mp-level.mp-level-overlay > h2::before {
+	opacity: 1;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	transform: translateX(0);
+}
+.mp-menu ul li {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+.mp-menu ul li > a {
+	display: block;
+	text-decoration: none;
+	color: #f0f0f0;
+	padding: 10px 10px 10px 40px;
+	outline: none;
+	box-shadow: inset 0 -1px #5e5e5e;
+	text-shadow: 0 0 1px rgba(255,255,255,0.1);
+	font-size: 1.1em;
+	-webkit-transition: background 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, box-shadow 0.3s;
+}
+.mp-menu ul li::before {
+	position: absolute;
+	left: 10px;
+	z-index: -1;
+	color: #5e5e5e;
+	line-height: 3.5;
+}
+.mp-level > ul > li:first-child > a {
+	box-shadow: inset 0 -1px #5e5e5e, inset 0 1px #5e5e5e;
+}
+.mp-menu ul li a:hover, .mp-level > ul > li:first-child > a:hover {
+	background: #5e5e5e;
+	opacity: .5;
+	box-shadow: inset 0 -1px rgba(0,0,0,0);
+}
+.mp-menu .mp-level.mp-level-overlay > ul > li > a, .mp-level.mp-level-overlay > ul > li:first-child > a {
+	box-shadow: inset 0 -1px rgba(0,0,0,0);
+}
+.mp-level > ul > li:first-child > a:hover, .mp-level.mp-level-overlay > ul > li:first-child > a {
+	box-shadow: inset 0 -1px rgba(0,0,0,0), inset 0 1px rgba(0,0,0,0);
+} /* seems like Chrome 34.0.1847.131 needs the second shadow otherwise the transition breaks */
+.mp-back {
+	background: #6c6c6c;
+	outline: none;
+	text-decoration: none;
+	color: #ccc;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	display: block;
+	font-size: 0.8em;
+	padding: 1em;
+	position: relative;
+	box-shadow: inset 0 1px rgba(0,0,0,0.1);
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
+}
+.mp-back::after {
+	position: absolute;
+	content: url(../images/arrow-right.png);
+	right: 10px;
+	font-size: 1.3em;
+	color: rgba(0,0,0,0.3);
+}
+.icon-arrow-left:before {
+	padding-top: 11px;
+	content: url(../images/arrow-left.png);
+	opacity: .5;
+}
+.mp-menu .mp-level.mp-level-overlay > .mp-back, .mp-menu .mp-level.mp-level-overlay > .mp-back::after {
+	background: transparent;
+	box-shadow: none;
+	color: transparent;
+}
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+/* We'll show the first level only */
+.no-csstransforms3d .mp-pusher, .no-js .mp-pusher {
+	padding-left: 300px;
+}
+.no-csstransforms3d .mp-menu .mp-level, .no-js .mp-menu .mp-level {
+	display: none;
+}
+.no-csstransforms3d .mp-menu > .mp-level, .no-js .mp-menu > .mp-level {
+	display: block;
+}
+/* vimeo */
+iframe {
+	width: 750px;
+	height: 422px;
+}
+/* TABLET */
+@media all and (max-width: 750px) {
+iframe {
+	width: 450px;
+	height: 253px;
+}
+}
+/* MOBILE & SMALL SCREENS */
+@media all and (max-width: 479px) {
+iframe {
+	width: 320px;
+	height: 180px;
+}
+}
+/* secondary layout */
+/* Header */
+.header {
+	width:100%; z-index:10; margin-top:20px;
+	background:url(../images/logo-minimal-medium.png) center center no-repeat; height:250px;
+	position:absolute;
+}
+.header2 {
+	width:100%; z-index:10; margin-top:20px;
+	height:250px;
+	position:absolute;
+}
+.headerContent {
+	position: relative;
+	top: 50%; z-index:20;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+}
+.header h1, .header2 h1, .veins h1 {
+	width:75%; margin:auto;
+	text-align:center;
+	font-size:3.5em;
+	font-weight:normal;
+	padding:10px;
+}
+ .veins h1 { padding-bottom:30px }
+ .veins h3 { color:#333; font-size:1.5em; }
+ .photos { padding: 5px; border: solid 1px #ccc!important; background-color:#fff;}
+.secondaryContent {
+	background-color:#fff;
+	padding: 220px 0 0 0; position:relative;
+}
+.secondaryContent h2 {
+	font-size:1.75em; text-align:center; padding: 30px 0 30px 0;
+}
+.veins p {
+	padding:0 20px 0 20px; text-align:justify;
+}
+.numbers { color:#c21818; font-size:6em; width: 150px;
+	font-family: 'droid_serifregular';
+height: 150px; margin:auto; padding-top:20px; }
+.numbersText { font-size:1.5em; padding: 20px; margin:0; font-style:italic; }
+.round {
+	border-radius: 50%!important;
+	background-color:#f0f0f0;
+  -webkit-border-top-left-radius: 1px;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+
+  -moz-border-radius-topleft: 1px;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 4px;
+
+  border-top-left-radius: 1px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 4px;
+}
+/* full screen video background */
+video { 
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(../images/VenousProVideo.jpg) no-repeat;
+  background-size: cover;
+}
+#VenousProVideo { 
+position:relative;
+  font-weight:100; 
+  background: rgba(0,0,0,0.5);
+  color: white;
+  width: 100%;
+  float: right;
+  font-size: 1.2rem; position:absolute; top: 0; right: 0;
+}
+.videoContent {
+	position: absolute;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	text-align: right;
+	width: 80%;
+	margin: auto;
+	top: 50%;
+	right:50px;
+}
+.videoContent h1 {
+	padding-bottom: 40px;
+	color: #e0e0e0;
+	font-size: 2.75em;
+	line-height: 125%;
+}
+
+/* TABLET */
+@media all and (max-width: 768px) {
+.videoContent {
+	text-align: center;
+	width: 90%;
+	right:5%;
+}
+.videoContent h1 {
+	padding-bottom: 30px;
+	font-size: 2.5em;
+}
+}
+/* MOBILE */
+@media all and (max-width: 480px) {
+.videoContent h1 {
+	font-size: 1.5em;
+}
+}
+/*
+I added this to make the menu scroll:
+
+.mp-level.mp-level-open:not(.mp-level-overlay) > ul {
+height: 100%;
+overflow-y: scroll;
+-webkit-overflow-scrolling:touch;
+}
+*/
